@@ -14,6 +14,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { PostComponent } from './components/post/post.component';
+import { StorePageComponent } from './components/store-page/store-page.component';
+import { PopularSliderComponent } from './components/popular-slider/popular-slider.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { PostComponent } from './components/post/post.component';
     SidebarComponent,
     ToolbarComponent,
     PostComponent,
+    StorePageComponent,
+    PopularSliderComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,8 +39,8 @@ import { PostComponent } from './components/post/post.component';
     MatListModule,
     MatCardModule,
     RouterModule.forRoot([
-      {path: 'home', component: HomeComponent},
-      {path: 'store', component: HomeComponent},
+      {path: '', component: HomeComponent},
+      {path: 'store', component: StorePageComponent},
       {path: 'other', component: HomeComponent}
     ])
   ],

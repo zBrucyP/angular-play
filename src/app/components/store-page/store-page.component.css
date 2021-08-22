@@ -1,0 +1,26 @@
+.store-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+.subnav-container {
+    flex-grow: 1;
+}
+
+.main-products-container {
+    flex-grow: 4;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: stretch;
+}
+
+mat-card img{
+    object-fit: cover; /*this makes the image in src fit to the size specified below*/
+    width: 16em; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+}
+
+.product-card {
+    margin: 1em;
+}

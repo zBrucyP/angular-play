@@ -13,11 +13,11 @@ export class SidebarComponent implements OnInit, OnDestroy {
   options = [
     {
       text: "Website Title",
-      path: "/home"
+      path: "/"
     },
     {
       text: "Home",
-      path: "/home"
+      path: "/"
     },
     {
       text: "Store",

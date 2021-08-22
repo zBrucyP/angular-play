@@ -1,0 +1,32 @@
+<h2 class="slider-title">Popular Picks</h2>
+<div class="slider-container">
+    <button 
+    mat-icon-button
+    aria-label="icon-button with left arrow icon"
+    >
+        <mat-icon class="arrow-icons">keyboard_arrow_left</mat-icon>
+    </button>
+    
+    <mat-card class="product-card" *ngFor="let product of products$ | async">
+        <mat-card-header>
+            <mat-card-title>{{product.title}}</mat-card-title>
+            <mat-card-subtitle>{{product.subtitle}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src={{product.imageLink}} alt="Product Image">
+        <mat-card-content>
+            <p>
+                
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>Add to Cart</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <button 
+    mat-icon-button
+    aria-label="icon-button with right arrow icon"
+    >
+        <mat-icon class="arrow-icons">keyboard_arrow_right</mat-icon>
+    </button>
+</div>
