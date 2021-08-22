@@ -1,0 +1,20 @@
+<div class="home-container">
+    <mat-card class="feed-container">
+        <mat-card *ngFor="let post of posts$ | async">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{post.title}}</mat-card-title>
+                <mat-card-subtitle>{{post.subtitle}}</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <p>
+                  {{post.content}}
+                </p>
+              </mat-card-content>
+              <mat-card-footer>{{post.footer}}</mat-card-footer>
+        </mat-card>
+    </mat-card>
+    <mat-card class="extra-info-container">
+        tes2
+    </mat-card>
+</div>

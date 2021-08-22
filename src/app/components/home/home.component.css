@@ -1,0 +1,14 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+.feed-container {
+    flex-grow: 2;
+}
+
+.extra-info-container {
+    flex-grow: 1;
+}
